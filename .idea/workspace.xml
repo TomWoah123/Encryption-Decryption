@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d77faa4f-cd49-402f-a8e6-5354adb67fbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataset_91022.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataset_91065.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Encryption Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Encryption-Decryption.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +32,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\timot\Desktop\Encryption Project\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FileReader">
+    <configuration name="FileReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileReader" />
+      <module name="Encryption-Decryption" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="encryptdecrypt.Main" />
       <module name="Encryption-Decryption" />
@@ -52,6 +66,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FileReader" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -73,6 +88,9 @@
       <workItem from="1596408956677" duration="148000" />
       <workItem from="1596409126281" duration="4000" />
       <workItem from="1596409196512" duration="1672000" />
+      <workItem from="1596413234685" duration="98000" />
+      <workItem from="1596554831676" duration="1200000" />
+      <workItem from="1596578897644" duration="1896000" />
     </task>
     <servers />
   </component>
@@ -80,29 +98,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1596412771908">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1596580628045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596412771908" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1596412771907">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596580628045" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1596580628045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596412771907" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1596412771907">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596580628045" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1596580628044">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596412771907" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1596412771907">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596580628044" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1596580628045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596412771907" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596580628045" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1596409095468">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596409095468" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1596413235847">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1596578898256">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1596413235847" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1596578898256" />
   </component>
 </project>
