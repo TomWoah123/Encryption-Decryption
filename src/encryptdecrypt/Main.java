@@ -1,4 +1,6 @@
 package encryptdecrypt;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.*;
 public class Main {
     public static String alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -6,21 +8,45 @@ public class Main {
         String mode = "enc";
         int key = 0;
         String data = "";
-        for (int i = 0; i < args.length; i += 2) {
-            if (args[i].equals("-mode") && args[i + 1].equals("dec")) {
-                mode = "dec";
-            }
-            if (args[i].equals("-key")) {
-                key = Integer.parseInt(args[i + 1]);
-            }
-            if (args[i].equals("-data")) {
-                data = args[i + 1];
-            }
+        boolean out = false;
+        String outFile = "";
+        if (args.length % 2 == 1) {
+            return;
         }
-        if (mode.equals("enc")) {
-            System.out.println(encryptAscii(data, key));
-        } else {
-            System.out.println(decryptAscii(data, key));
+        try {
+            for (int i = 0; i < args.length; i += 2) {
+                if (args[i].equals("-mode") && args[i + 1].equals("dec")) {
+                    mode = "dec";
+                }
+                if (args[i].equals("-key")) {
+                    key = Integer.parseInt(args[i + 1]);
+                }
+                if (args[i].equals("-data")) {
+                    data = args[i + 1];
+                } else if (args[i].equals("-in")) {
+                    File file = new File(args[i+1]);
+                    Scanner scan = new Scanner(file);
+                    while (scan.hasNext()) {
+                        data += scan.nextLine();
+                    }
+                    scan.close();
+                }
+                if (args[i].equals("-out")) {
+                    out = true;
+                    outFile = args[i+1];
+                }
+            }
+            String result = (mode.equals("enc")) ? encryptAscii(data, key) : decryptAscii(data, key);
+            if (out) {
+                File f = new File(outFile);
+                FileWriter fileWriter = new FileWriter(f, true);
+                fileWriter.write(result);
+                fileWriter.close();
+            } else {
+                System.out.println(result);
+            }
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
         }
     }
 
